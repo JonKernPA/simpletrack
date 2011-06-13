@@ -1,6 +1,12 @@
 require 'rubygems'
 require 'sinatra'
+require 'haml'
 
 get '/' do
-  "Welcome to SimpleTrack!"
+  haml :index
 end
+
+get '/about' do
+  haml :about
+end
+

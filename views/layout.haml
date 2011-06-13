@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %link(rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css")
+    %link(rel="stylesheet" href="css/styles.css")
+    
+    %title Simple Project Tracking
+  %body
+    #wrapper
+      #header
+      %h1 Available Tasks
+      
+      #nav
+        %ol
+          %a(href="/")
+            %li Home
+          %a(href="about")
+            %li About
+            
+      #content
+        =yield
+
+      #side_bar
+        %h1 Projects
+        %p
+          project #1
+      #footer
+        %p
+          This is the footer
